@@ -1,0 +1,26 @@
+Target Foobar - with trace:			
+a (sec per iteration)	0.0291244	+/- 0.0004807	1.65%
+b (startup time)	2.5238	+/- 0.02796	1.11%
+			
+Target Foobar - no trace:			
+a (sec per iteration)	7.25688e-05	+/- 4.702e-07	0.65%
+b (startup time)	0.350888	+/- 0.008165	2.33%
+			
+	401.335009	fold slowdown	
+			
+Target Foobar - remote trace			
+a (sec per iteration)	0.00737684	1.398e-05	0.19%
+b (startup time)	0.850543	0.05938	6.98%
+			
+	101.653052	fold slowdown	
+			
+			
+Target Genetic - no trace			
+a (sec per iteration)	0.000849	7.754e-07	0.09%
+b (startup time)	0.325472	0.03428	10.53%
+			
+Target Genetic - with trace			
+a (sec per iteration)	3.21273	0.04019	1.25%
+b (startup time)	3.05845	2.293	74.96%
+			
+	3784.134276	fold slowdown	

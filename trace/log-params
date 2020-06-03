@@ -1,0 +1,11 @@
+With trace:
+
+a (sec per iteration)	0.0291244 	+/- 0.0004807 	1.65%
+b (startup time)	2.5238 	+/- 0.02796 	1.108%
+
+No trace:
+
+a (sec per iteration)	7.25688e-05 	+/- 4.702e-07 	0.648%
+b (startup time)	0.350888 	+/- 0.008165 	2.327%
+
+That is a	 401.339 	fold slowdown

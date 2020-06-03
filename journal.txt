@@ -1,0 +1,16 @@
+Jan 10, 2004 - start
+Jan 28, 2004 - jdwp
+Jan 30, 2004 - frp
+Feb 12, 2004 - jdot
+Feb 17, 2004 - idle-e
+Feb 19, 2004 - exceptions
+Feb 26, 2004 - solid catch and profiler
+Feb 28, 2004 - run-trigger
+Mar  1, 2004 - statistical profiler
+Mar  5, 2004 - 1 page write-up
+Mar 12, 2004 - start of two week wrist break
+Mar 24, 2004 - resuming
+Apr  7, 2004 - 7 pages
+Apr  8, 2004 - rewriting with Shriram
+Apr 14, 2004 - submission to ASE
+

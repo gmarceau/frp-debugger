@@ -1,0 +1,20 @@
+From lower level of abstract to higher level of abstraction:
+
+  jdwp_spec2.ss : packet specification
+  jdwp_spec3.ss : scheme function that construct packets according to the specs in jdwp_spec2
+  codec.ss : implements marshalling and unmarshalling of value according to the rules of the jdwp
+  jdwp.ss : query and listen to jdwp replies
+  jdi-symbol-table : High-level Scheme operation on Java values
+  jdi.ss : imperative style debugging primitives
+  jdb.ss : FrTime debugging utilities
+
+This project implement the jdwp binary protocol, which is used to debug java
+programs. 
+
+As of Tue Jan 27 18:40:31 2004, it is just comming together. I can talk to a
+running java program and get the values of the local variables. 
+
+This project started as a translation of the ruby-jdwp project, at
+http://rubyforge.org/projects/rubyjdwp/
+
+Questions go to Guillaume Marceau, gmarceau@cs.brown.edu

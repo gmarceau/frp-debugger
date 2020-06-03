@@ -1,0 +1,105 @@
+Wed Jun  2 14:06:50 2004
+
+Questions:
+- don't you need to wrap set! ? 
+- why "(parameterize ([current-eval basic-eval]) ... )" ?
+- how does you make sure the stepper's annotations were applied?
+- how does make-debug-info works?
+
+Open problem in John Clements debugger:
+- handle c-w-cm's in the user's code
+- handle single stepping, dynamic breakpoints, break button, multiple thread, 
+   current line moves, replay
+- name-environment clashes between the user program and the debugger command lines
+- do not annotate calls to library functions
+- breakpoints in multiple files
+
+
+
+Name candidates:
+ndg - not a debugger
+msg - montreal steak debugger
+abc - a bug catcher
+
+  The Master
+  Cybermen
+  Miranda
+  Sea Devil
+  Davros - the creater of the daleks
+  Ogrons - 
+
+Thu Apr  1 17:01:04 2004
+
+Thanks to FrTime, it would be very easy to have multiple
+programmers debug that same program remotely.
+
+
+Wed Mar 31 16:33:05 2004
+
+TODO:
+- there is a jdwp event for method exit. I should use it.
+- jwatch has to be implemented.
+- jstep has to be implemented as well.
+- recorders have to be debugged.
+
+
+
+
+Wed Mar 17 17:57:38 2004
+
+People who were working on debugging between 1992 and 2002:
+  - Christ Fraser at Microsoft
+  - Somebody at Havard
+  - Bernd Bruegge and Peter Hibbard on path expressions
+
+
+You said you were missing papers from the 90s.  Here are a
+few:
+
+   http://research.microsoft.com/~drh/pubs/duel.pdf
+   http://research.microsoft.com/~drh/pubs/cdb.pdf
+   http://www.cs.bell-labs.com/sys/doc/acidpaper.ps
+   http://arxiv.org/pdf/cs.SE/0011010
+
+
+"
+   I first recall seeing event pattern languages like this
+   in a pair of papers that appeared in the 1985 ACM
+   Symposium on High-Level Debugging. Unfortunately the ACM
+   electronic archives do not seem to go back that
+   far. Nonetheless, if the current authors have access to a
+   copy of the proceedings, they may find relevant papers by
+   Baiardi and or by Bates and Wileden.
+"
+
+
+Thu Feb 19 19:25:42 2004
+
+Why are behavior defined as list? 
+  Because of letrec and the behavior of merge-e in case of simultaneous events
+
+Why two maps?
+  (add1 seconds)
+  (map-e (changes seconds) add1)
+
+Why I am getting "had an undefined stream"?
+
+Try/Catch: what is that right semantics? Dead on uncaught
+exception kills all programs during their
+construction. Frp should redefine #%module so that programs
+are not run during their construction.
+
+Terminaison Criterias: for now it is not possible to control
+the target process via a behavior. You could possibly wait
+for an event to be generated before restart the target
+program. But if your frp program is mainly composed of
+behaviors, you cannot tell when a value has converged.
+
+Frp Needs strict/lazy:
+Strict suspend dependent computation until the parent
+computation has converged. Lazy drops parent computation
+until the dependent computation has converged.
+
+How do you do pairs? Should 'nothing' be magic over all behaviors?
+
+How do you do lambda abstraction over frp networks?
